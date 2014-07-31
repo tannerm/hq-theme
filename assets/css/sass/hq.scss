@@ -1,0 +1,86 @@
+/**
+ * HQ
+ * http://hqthe.me
+ *
+ * Copyright (c) 2014 Tanner Moushey
+ * Licensed under the GPLv2+ license.
+ */
+
+//
+// IMPORTING STYLES
+//
+
+@import "normalize";
+@import "compass";
+@import "settings";
+@import "foundation";
+
+/*
+BASE (MOBILE) SIZE
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*/
+
+// styles in base.scss
+@import "base";
+
+@media #{$small-up} {
+	@import "sizes/small_up";
+}
+
+/*
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media #{$medium-up} {
+	@import "sizes/medium_up";
+} // end of media query
+
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media #{$large-up} {
+	@import "sizes/large_up";
+} // end of media query
+
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media #{$xlarge-up} {
+	@import "sizes/xlarge_up";
+} // end of media query
+
+@media #{$small-only} {
+	@import "sizes/small_only";
+}
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+	// styles in 2x.scss
+	@import "sizes/2x";
+
+} // end of media query
+
+/*
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*/
+@media print {
+	@import "print";
+}

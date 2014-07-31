@@ -1,0 +1,17 @@
+/* TEAM */
+	Developer: Tanner Moushey
+	Contact:   tanner@iwitnessdesign.com
+	URI:       http://iwitnessdesign.com
+
+/* THANKS */
+	Template Design: 10up
+	URI:             http://10up.com
+	Twitter:         @10up
+	
+	Template Design: Eric Mann
+	URI:             http://eamann.com
+	Twitter:         @ericmann
+	
+/* SITE */
+	Created:  2014-07-30
+	Template: https://github.com/10up/grunt-wp-theme
